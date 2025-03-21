@@ -1,0 +1,21 @@
+#!/bin/bash
+#PBS -q normal
+#PBS -N train_job
+#PBS -l select=1:ncpus=4:ngpus=2:mem=32GB
+#PBS -l walltime=24:00:00
+#PBS -o out-run.txt
+
+module purge
+module load miniforge3
+module load cuda/12.2.2
+python -c "import time; time.sleep(86400)"
+
+source activate xingjian
+
+# # 可选：查看GPU状态（如果在GPU节点上）
+# nvidia-smi
+
+# cd $PBS_O_WORKDIR
+# python driver.py
+
+# echo "Job completed at: $(date)"

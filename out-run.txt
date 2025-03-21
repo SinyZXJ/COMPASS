@@ -1,0 +1,29 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2025-03-20 21:41:12.814437:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 9763190.pbs101
+	Project: personal-e1373512
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(32), Used(32)
+	CPU Time Used: 458:35:19
+	Memory: Requested(220gb), Used(85981516kb)
+	Vmem Used: 22923063316kb
+	Walltime: Requested(24:00:00), Used(24:00:02)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (x1000c0s0b0n0:ncpus=32:ngpus=2:mem=230686720kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	GPU Duration: 24.0hrs
+	GPU Power Consumed: 90.38W
+	GPU Max GPU Memory Used: 36.41GB
+	Memory Throughput Rate (Average): x1000c0s0b0n0:(gpu1:0%+gpu0:13%)
+	Memory Throughput Rate (Max): x1000c0s0b0n0:(gpu1:0%+gpu0:100%)
+	Memory Throughput Rate (Min): x1000c0s0b0n0:(gpu1:0%+gpu0:0%)
+	GPU SM Utilization (Average): x1000c0s0b0n0:(gpu1:0%+gpu0:20%)
+	GPU SM Utilization (Max): x1000c0s0b0n0:(gpu1:0%+gpu0:100%)
+	GPU SM Utilization (Min): x1000c0s0b0n0:(gpu1:0%+gpu0:0%)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Warning: GPUs 1 have a percentage of 0 utilisation.
+GPU application profile: Low
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+

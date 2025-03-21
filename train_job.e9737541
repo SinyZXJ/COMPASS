@@ -1,0 +1,5 @@
+/var/spool/pbs/mom_priv/jobs/9737541.pbs101.SC: line 15: nvidia-smi: command not found
+Traceback (most recent call last):
+  File "/home/users/nus/e1373512/STAMP-main/driver.py", line 8, in <module>
+    import wandb
+ModuleNotFoundError: No module named 'wandb'
