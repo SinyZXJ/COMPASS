@@ -1,23 +1,25 @@
-# Multi-STAMP
+# COMPASS: Cooperative Multi-Agent Persistent Surveillance using Spatio-Temporal Attention Network
 
 This work is developed based on [Spatio-Temporal Attention Network for Persistent Monitoring of Multiple Mobile Targets](https://arxiv.org/abs/2303.06350) (accepted for presentation at IROS 2023).
 
 ## Run
+## Running command under NSCC(Singapore):
 qsub train_nscc.pbs
 export PBS_JOBID=*
 qstat -f
 ssh *
 module purge
 module load miniforge3
-conda activate xingjian
+conda activate <your-env-name>(xingjian)
 module load cuda/12.2.2
 nvidia-smi
-cd scratch/win-STAMP-main/
+cd scratch/<your-dir-name>(COMPASS)/
 python3 driver.py
 
-qstat看运行任务
-qdel删除
-### Requirements
+qstat - check the running tasks
+qdel xxx.pbs - delete the target 
+
+## Requirements
 ```bash
 python >= 3.9
 pytorch >= 1.11
@@ -30,11 +32,11 @@ imageio
 tensorboard
 ```
 
-### Training
+## Training
 1. Set appropriate parameters in `arguments.py -> Arguments`.
 2. Run `python driver.py`.
 
-### Evaluation
+## Evaluation
 tensorboard --logdir=/home/users/nus/e1373512/scratch/win-STAMP-main/runs/run
 1. Set appropriate parameters in `arguments.py -> ArgumentsEval`.
 2. Run `python /evals/eval_driver.py`.
