@@ -1,8 +1,13 @@
-# STAMP - Spatio-Temporal Attention network for Monitoring Persistently
+# COMPASS
 
-This repository hosts the code for paper [Spatio-Temporal Attention Network for Persistent Monitoring of Multiple Mobile Targets](https://arxiv.org/abs/2303.06350), accepted for presentation at IROS 2023.
+### Xingjian Zhang, Yizhuo Wang, Guillaume Sartoretti
 
-## Run
+This repository hosts the code for paper COMPASS https://arxiv.org/abs/2507.16306, which was accepted by MRS 2025.
+
+## Training Tips
+
+If you are using NSCC of Singapore to train, you could use the following commands to ease your experience.
+
 qsub train_nscc.pbs
 export PBS_JOBID=*
 qstat -f
@@ -15,8 +20,9 @@ nvidia-smi
 cd scratch/win-STAMP-main/
 python3 driver.py
 
-qstat看运行任务
-qdel删除
+qstat - To see all the tasks
+qdel -  To delete certain task
+
 ### Requirements
 ```bash
 python >= 3.9
@@ -35,7 +41,6 @@ tensorboard
 2. Run `python driver.py`.
 
 ### Evaluation
-tensorboard --logdir=/home/users/nus/e1373512/scratch/compass_decenValue/runs/run_ippo_shared
 1. Set appropriate parameters in `arguments.py -> ArgumentsEval`.
 2. Run `python /evals/eval_driver.py`.
 
@@ -50,33 +55,3 @@ tensorboard --logdir=/home/users/nus/e1373512/scratch/compass_decenValue/runs/ru
 - `/evals/*`: Evaluation files.
 - `/utils/*`: Utility files for graph, target motion, and TSP.
 - `/model/*`: Trained model.
-
-### Demo
-
-<img src="utils/media/demo.gif" alt="demo" style="width: 70%;">
-
-<div>
-    <h3><a href="https://youtu.be/q1wQup70m6c">Watch AirSim Video</a></h3>
-    <a href="https://youtu.be/q1wQup70m6c">
-        <img src="https://img.youtube.com/vi/q1wQup70m6c/maxresdefault.jpg" alt="Watch the video" style="width: 70%;">
-    </a>
-</div>
-
-
-
-
-## Cite
-
-```bibtex
-@inproceedings{wang2023spatio,
-  title={Spatio-Temporal Attention Network for Persistent Monitoring of Multiple Mobile Targets},
-  author={Wang, Yizhuo and Wang, Yutong and Cao, Yuhong and Sartoretti, Guillaume},
-  booktitle={2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
-  year={2023}
-}
-```
-Authors:
-[Yizhuo Wang](https://github.com/wyzh98),
-[Yutong Wang](https://github.com/wyt2019suzhou),
-[Yuhong Cao](https://github.com/caoyuhong001),
-[Guillaume Sartoretti](https://github.com/gsartoretti)
