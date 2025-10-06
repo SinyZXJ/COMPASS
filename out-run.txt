@@ -1,0 +1,29 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2025-06-17 11:54:39.853241:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 10693860.pbs101
+	Project: personal-e1373512
+	Exit Status: 271
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(32), Used(32)
+	CPU Time Used: 00:00:00
+	Memory: Requested(220gb), Used(17200kb)
+	Vmem Used: 0kb
+	Walltime: Requested(24:00:00), Used(00:00:04)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (x1000c1s2b0n0:ncpus=32:ngpus=2:mem=230686720kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	GPU Duration: 5.08secs
+	GPU Power Consumed: 0W
+	GPU Max GPU Memory Used: 0.0B
+	Memory Throughput Rate (Average): x1000c1s2b0n0:(gpu1:0%+gpu3:0%)
+	Memory Throughput Rate (Max): x1000c1s2b0n0:(gpu1:0%+gpu3:0%)
+	Memory Throughput Rate (Min): x1000c1s2b0n0:(gpu1:0%+gpu3:0%)
+	GPU SM Utilization (Average): x1000c1s2b0n0:(gpu1:0%+gpu3:0%)
+	GPU SM Utilization (Max): x1000c1s2b0n0:(gpu1:0%+gpu3:0%)
+	GPU SM Utilization (Min): x1000c1s2b0n0:(gpu1:0%+gpu3:0%)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Warning: All GPUs have a percentage of 0 utilisation.
+GPU application profile: Idle
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+

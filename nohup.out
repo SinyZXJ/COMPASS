@@ -1,0 +1,27 @@
+2025-05-12 15:08:32,391	INFO worker.py:1841 -- Started a local Ray instance.
+/scratch/users/nus/e1373512/compass_decenValue/driver.py:200: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=driver_device.type == 'cuda')
+/scratch/users/nus/e1373512/compass_decenValue/driver.py:86: RuntimeWarning: Mean of empty slice
+  avg_data = list(np.nanmean(data_np, axis=0))
+=== COMPASS (IPPO with Shared Parameters) ===
+Run Name: run_ippo_shared
+Num Agents: 3
+Minibatch size: 256, Buffer size: 4096
+Using CUDA devices: 0, 1 (NVIDIA A100-SXM4-40GB)
+Driver using device: cuda
+Loading model: run_ippo_shared from models/run_ippo_shared/checkpoint.pth
+Resuming from episode: 3023
+Optimizer LR: 9.216e-05
+[36m(Runner pid=2803401)[0m [92mmeta12:[0m episode 3035 starts
+Collected 4096 timesteps from 16 rollouts.
+[36m(Runner pid=2803413)[0m [92mmeta14:[0m episode 3053 starts[32m [repeated 16x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)[0m
+Collected 4096 timesteps from 16 rollouts.
+[36m(Runner pid=2803413)[0m [92mmeta14:[0m episode 3069 starts[32m [repeated 16x across cluster][0m
+Collected 4092 timesteps from 16 rollouts.
+[36m(Runner pid=2803402)[0m [92mmeta08:[0m episode 3079 starts[32m [repeated 16x across cluster][0m
+User interrupted training.
+Shutting down Ray and saving final model...
+Saving model at episode 3071
+Model saved to models/run_ippo_shared/checkpoint.pth
+[36m(Runner pid=2803406)[0m [92mmeta15:[0m episode 3086 starts[32m [repeated 15x across cluster][0m
+Exiting.
