@@ -2,12 +2,15 @@
 
 ### Xingjian Zhang, Yizhuo Wang, Guillaume Sartoretti
 
-This repository hosts the code for paper COMPASS https://arxiv.org/abs/2507.16306, which was accepted by MRS 2025.
+This repository hosts the code for paper COMPASS https://arxiv.org/abs/2507.16306, which was accepted by MRS 2025. 
+
+*This repository is still under construction.
 
 ## Training Tips
 
-If you are using NSCC of Singapore to train, you could use the following commands to ease your experience.
+**If you are using NSCC of Singapore to train, you could use the following commands to ease your experience.**
 
+```
 qsub train_nscc.pbs
 export PBS_JOBID=*
 qstat -f
@@ -22,6 +25,7 @@ python3 driver.py
 
 qstat - To see all the tasks
 qdel -  To delete certain task
+```
 
 ### Requirements
 ```bash
