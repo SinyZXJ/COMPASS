@@ -75,6 +75,8 @@ class WorkerEval:
         unc_list = [self.env.unc]
         budget_list = [0]
         rew_list = []
+        unc_stddev_list = [np.std(self.env.unc_list)]
+        jsd_stddev_list = [np.std(self.env.JS_list)]
 
         for step in range(1024):
             if self.save_image:
@@ -135,6 +137,8 @@ class WorkerEval:
             rmse_list.append(self.env.RMSE)
             jsd_list.append(self.env.JS)
             unc_list.append(self.env.unc)
+            unc_stddev_list.append(np.std(self.env.unc_list))
+            jsd_stddev_list.append(np.std(self.env.JS_list))
 
             for ag in range(self.num_agents):
                 routes[ag].append(next_node_indices[ag])
@@ -160,6 +164,8 @@ class WorkerEval:
                 perf_metrics['avgrmse'] = np.mean(rmse_list)
                 perf_metrics['avgjsd'] = np.mean(jsd_list)
                 perf_metrics['avgunc'] = np.mean(unc_list)
+                perf_metrics['stdunc'] = np.mean(unc_stddev_list)
+                perf_metrics['stdjsd'] = np.mean(jsd_stddev_list)
                 print(f'\033[92mmeta{self.meta_id:02}:\033[0m episode {curr_eval} done at {step} steps, avg JS {perf_metrics["avgjsd"]:.4g}')
                 break
 
